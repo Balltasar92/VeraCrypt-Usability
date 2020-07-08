@@ -27,7 +27,7 @@ The txt files like password1000000.txt have to be located in the same folder as 
 
 
 ### Limitations:
-For using the internal email sending functionallity, an smtp server is required. For the user testing I configured one on at jetmail.com. Since I did not want to
+For using the internal email sending functionallity, an smtp server is required. For the user testing I configured one on at mailjet.com. Since I did not want to
 publish the credentials, this functionallity does not work here. Possessing credentials, it can be activated in the SendMail() function in Tcformat.c.
 
 I focused on the system encryption. Therefore, this version can not configure a hidden OS encryption or a mulit-boot encryption. This functionallities can be added by
