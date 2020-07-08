@@ -2,13 +2,13 @@
 A modified VeraCrypt interface that aims to impove the software's usability
 
 Please note: This version aims to show a possible VeraCrypt interface with improved usability. Even if it was possible to encrypt a Windows system, it should not be used for encrypting a real system. Due to technical [problems](https://sourceforge.net/p/veracrypt/discussion/technical/thread/8a3e66cd77/?limit=25#2581)
-it is basen on VeraCrypt version 1.22. But since only few interface changes were made since them, it should be possible to integrate it into the current version. It should be noted that I am not an experienced C/C++ programmer. Therefore, before copy-pasting, I recommend checking the code carefully, especially since this is a security-related software.
+it is basen on VeraCrypt version 1.22. But since only few interface changes were made since them, it should be possible to integrate it into the current version. It should be noted that I am not an experienced C/C++ programmer. Therefore, before copy-pasting, I recommend checking the code carefully, especially since this is a security-related software. Some ideas and code parts come from Eugene Y. Vasserman and Sumeet Gujrati who developped a usable TrueCrypt [interface](https://www.researchgate.net/publication/262163919_The_usability_of_truecrypt_or_how_i_learned_to_stop_whining_and_fix_an_interface).
 
 
 
 ### How to run the VeraCrypt Format.exe:
 
-As mentioned before, the executable file is basen on VC 1.22. If you want to try out the new interface, you have to deinstall your current VC version and install the version 1.22. 
+As mentioned before, the executable file is based on VeraCrypt 1.22. If you want to try out the new interface, you have to deinstall your current VeraCrypt version and install the version 1.22. 
 You can use the original version from [here](https://sourceforge.net/projects/veracrypt/files/VeraCrypt%201.22/VeraCrypt%20Setup%201.22.exe/download). Afterwards, you can start VeraCrypt Format.exe.
 The txt files like password1000000.txt have to be located in the same folder as VeraCrypt Format.exe
 
