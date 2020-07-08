@@ -1,0 +1,11 @@
+Dear VeraCrypt user,
+
+
+in the attachment, you can find the VeraCrypt Rescue Disk. It is only needed, if your Windows does not start anymore. In this case follow the instructions provided in the attached text files. 
+There are two possible cases, when you need the attachment of this email:
+
+1. After the execution of the encryption pretest, Windows does not start normally. In This case follow the instructions in "Pretest-Information.txt".
+
+2. After the encryption of the hard disk, Windows does not start normally. In this case follow the instruction in Rescue-Disk-Information.
+
+Please make sure that you always have access to a copy if the attached rescue disc file. If you only store it locally on your encrypted hard drive, you will not have access to it in case of a damaged Windows operating system.

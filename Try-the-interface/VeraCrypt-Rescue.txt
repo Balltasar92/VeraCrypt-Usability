@@ -1,0 +1,27 @@
+How and When to Use VeraCrypt Rescue Disk (After Encrypting)
+
+
+-----------------------------------------------------------------------------------
+
+
+I. How to Boot VeraCrypt Rescue Disk
+To boot a VeraCrypt Rescue Disk, insert it into your CD/DVD drive and restart your computer. If the VeraCrypt Rescue Disk screen does not appear (or if you do not see the 'Repair Options' item in the 'Keyboard Controls' section of the screen), it is possible that your BIOS is configured to attempt to boot from hard drives before CD/DVD drives. If that is the case, restart your computer, press F2 or Delete (as soon as you see a BIOS start-up screen), and wait until a BIOS configuration screen appears. If no BIOS configuration screen appears, restart (reset) the computer again and start pressing F2 or Delete repeatedly as soon as you restart (reset) the computer. When a BIOS configuration screen appears, configure your BIOS to boot from the CD/DVD drive first (for information on how to do so, please refer to the documentation for your BIOS/motherboard or contact your computer vendor's technical support team for assistance). Then restart your computer. The VeraCrypt Rescue Disk screen should appear now. Note: In the VeraCrypt Rescue Disk screen, you can select 'Repair Options' by pressing F8 on your keyboard.
+
+
+
+II. When and How to Use VeraCrypt Rescue Disk (After Encrypting)
+
+
+1) If the VeraCrypt Boot Loader screen does not appear after you start your computer (or if Windows does not boot), the VeraCrypt Boot Loader may be damaged. The VeraCrypt Rescue Disk allows you to restore it and thus to regain access to your encrypted system and data (however, note that you will still have to enter the correct password then). In the Rescue Disk screen, select 'Repair Options' > 'Restore VeraCrypt Boot Loader'. Then press 'Y' to confirm the action, remove the Rescue Disk from your CD/DVD drive and restart your computer.
+
+
+2) If you repeatedly enter the correct password but VeraCrypt says that the password is incorrect, the master key or other critical data may be damaged. The VeraCrypt Rescue Disk allows you to restore them and thus to regain access to your encrypted system and data (however, note that you will still have to enter the correct password then). In the Rescue Disk screen, select 'Repair Options' > 'Restore key data'. Then enter your password, press 'Y' to confirm the action, remove the Rescue Disk from your CD/DVD drive, and restart your computer.
+
+
+3) If the VeraCrypt Boot Loader is damaged, you can avoid running it by booting directly from the VeraCrypt Rescue Disk. Insert your Rescue Disk into your CD/DVD drive and then enter your password in the Rescue Disk screen.
+
+
+4) If Windows is damaged and cannot start, the VeraCrypt Rescue Disk allows you to permanently decrypt the partition/drive before Windows starts. In the Rescue Disk screen, select 'Repair Options' > 'Permanently decrypt system partition/drive'. Enter the correct password and wait until decryption is complete. Then you can e.g. boot your MS Windows setup CD/DVD to repair your Windows installation.
+Note: Alternatively, if Windows is damaged (cannot start) and you need to repair it (or access files on it), you can avoid decrypting the system partition/drive by following these steps: If you have multiple operating systems installed on your computer, boot the one that does not require pre-boot authentication. If you do not have multiple operating systems installed on your computer, you can boot a WinPE or BartPE CD/DVD or you can connect your system drive as a secondary or external drive to another computer and then boot the operating system installed on the computer. After you boot a system, run VeraCrypt, click 'Select Device', select the affected system partition, click 'OK', select 'System' > 'Mount Without Pre-Boot Authentication', enter your pre-boot authentication password and click 'OK'. The partition will be mounted as a regular VeraCrypt volume (data will be on-the-fly decrypted/encrypted in RAM on access, as usual).
+
+Note that even if you lose your VeraCrypt Rescue Disk and an attacker finds it, he or she will NOT be able to decrypt the system partition or drive without the correct password.

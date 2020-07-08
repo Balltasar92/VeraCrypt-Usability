@@ -1,0 +1,18 @@
+IMPORTANT NOTES
+ 
+Note that none of your files will be encrypted before you successfully restart your computer and start Windows. Thus, if anything fails, your data will NOT be lost. However, if something does go wrong, you might encounter difficulties in starting Windows. Therefore, please read (and, if possible, print) the following guidelines on what to do if Windows cannot start after you restart the computer.
+
+
+What to Do If Windows Cannot Start
+------------------------------------------------
+
+Note: These instructions are valid only if you have not started encrypting.
+
+- If Windows does not start after you enter the correct password (or if you repeatedly enter the correct password but VeraCrypt says that the password is incorrect), do not panic. Restart (power off and on) the computer, and in the VeraCrypt Boot Loader screen, press the Esc key on your keyboard (and if you have multiple systems, choose which to start). Then Windows should start (provided that it is not encrypted) and VeraCrypt will automatically ask whether you want to uninstall the pre-boot authentication component. Note that the previous steps do NOT work if the system partition/drive is encrypted (nobody can start Windows or access encrypted data on the drive without the correct password even if he or she follows the previous steps).
+
+
+- If the previous steps do not help or if the VeraCrypt Boot Loader screen does not appear (before Windows starts), insert the VeraCrypt Rescue Disk into your CD/DVD drive and restart your computer. If the VeraCrypt Rescue Disk screen does not appear (or if you do not see the 'Repair Options' item in the 'Keyboard Controls' section of the VeraCrypt Rescue Disk screen), it is possible that your BIOS is configured to attempt to boot from hard drives before CD/DVD drives. If that is the case, restart your computer, press F2 or Delete (as soon as you see a BIOS start-up screen), and wait until a BIOS configuration screen appears. If no BIOS configuration screen appears, restart (reset) the computer again and start pressing F2 or Delete repeatedly as soon as you restart (reset) the computer. When a BIOS configuration screen appears, configure your BIOS to boot from the CD/DVD drive first (for information on how to do so, please refer to the documentation for your BIOS/motherboard or contact your computer vendor's technical support team for assistance). Then restart your computer. The VeraCrypt Rescue Disk screen should appear now. In the VeraCrypt Rescue Disk screen, select 'Repair Options' by pressing F8 on your keyboard. From the 'Repair Options' menu, select 'Restore original system loader'. Then remove the Rescue Disk from your CD/DVD drive and restart your computer. Windows should start normally (provided that it is not encrypted).
+
+Note that the previous steps do NOT work if the system partition/drive is encrypted (nobody can start Windows or access encrypted data on the drive without the correct password even if he or she follows the previous steps).
+   
+Note that even if you lose your VeraCrypt Rescue Disk and an attacker finds it, he or she will NOT be able to decrypt the system partition or drive without the correct password.
